@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Enter name of student to update record"
+        android:text="Enter name of nomor_ternak to update record"
         android:textColor="#000000"
         android:textStyle="bold" />
     <EditText

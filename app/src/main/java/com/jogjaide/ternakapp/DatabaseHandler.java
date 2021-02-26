@@ -55,7 +55,7 @@ public class DatabaseHandler {
 
     // Search a student's record by name and updateit
     public static void updateUsingName(String oldName, String newName, String newMobile){
-        String sql = "UPDATE students SET name = '"+newName+"', mobile = '"+newMobile+"' WHERE name = '"+oldName+"';";
+        String sql = "UPDATE ternak_pejantan SET nomor_ternak = '"+newName+"', nama_ternak = '"+newMobile+"' WHERE nomor_ternak = '"+oldName+"';";
         db.execSQL(sql);
     }
 }
