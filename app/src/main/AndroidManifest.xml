@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.jogjaide.ternakapp.UpdatePejantanActivity"></activity>
-        <activity android:name="com.jogjaide.ternakapp.DeletePejantanActivity" />
-        <activity android:name="com.jogjaide.ternakapp.AddPejantanActivity" />
-        <activity android:name="com.jogjaide.ternakapp.ViewPejantanActivity" />
-        <activity android:name="com.jogjaide.ternakapp.MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".UpdatePejantanActivity" />
+        <activity android:name=".DeletePejantanActivity" />
+        <activity android:name=".AddPejantanActivity" />
+        <activity android:name=".ViewPejantanActivity" />
+        <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
