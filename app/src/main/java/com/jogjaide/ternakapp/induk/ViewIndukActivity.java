@@ -1,4 +1,4 @@
-package com.jogjaide.ternakapp;
+package com.jogjaide.ternakapp.induk;
 
 import android.database.Cursor;
 import android.graphics.Color;
@@ -12,33 +12,37 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ViewPejantanActivity extends AppCompatActivity {
-    private Cursor cr;
+import com.jogjaide.ternakapp.induk.DatabaseIndukHandler;
+import com.jogjaide.ternakapp.R;
+
+public class ViewIndukActivity extends AppCompatActivity {
+    private Cursor crinduk;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_pejantan);
+        setContentView(R.layout.activity_view_induk);
 
-        displayPejantan();
+        displayInduk();
+
     }
 
 
-    public void displayPejantan(){
+    public void displayInduk(){
 
-        cr = DatabaseHandler.readDatabase();
-        LinearLayout parent = (LinearLayout) findViewById(R.id.myLinearLayout);
+        crinduk = DatabaseIndukHandler.readDatabase();
+        LinearLayout parent = (LinearLayout) findViewById(R.id.myLinearLayoutInduk);
 
 
         int count =0;
-        if(!cr.moveToFirst()){
-            Toast.makeText(this, "Pejantan not found. Database empty", Toast.LENGTH_SHORT).show();
+        if(!crinduk.moveToFirst()){
+            Toast.makeText(this, "Induk not found. Database empty", Toast.LENGTH_SHORT).show();
             return;
         }
         do{
             count++;
             //display each student here
-            String nameDB = cr.getString(1); //column no 2
-            String numberDB = cr.getString(2); //column no 3
+            String nameDB = crinduk.getString(1); //column no 2
+            String numberDB = crinduk.getString(2); //column no 3
 
             LinearLayout child = new LinearLayout(this);
             child.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -65,8 +69,8 @@ public class ViewPejantanActivity extends AppCompatActivity {
 
 
 
-        }while(cr.moveToNext());
-        
+        }while(crinduk.moveToNext());
+
         Log.d("DEBUG", "COUNT: "+count);
 
     }

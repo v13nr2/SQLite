@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".induk.MainIndukActivity"></activity>
+        <activity android:name=".anak.MainAnakActivity"></activity>
+        <activity android:name=".induk.ViewIndukActivity" />
+        <activity android:name=".induk.MainIndukActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".UpdatePejantanActivity" />
         <activity android:name=".DeletePejantanActivity" />

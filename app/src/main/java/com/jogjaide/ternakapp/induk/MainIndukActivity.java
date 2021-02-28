@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.jogjaide.ternakapp.AddPejantanActivity;
+import com.jogjaide.ternakapp.DatabaseHandler;
 import com.jogjaide.ternakapp.DeletePejantanActivity;
 import com.jogjaide.ternakapp.MainActivity;
 import com.jogjaide.ternakapp.R;
@@ -18,6 +19,7 @@ public class MainIndukActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_induk);
+        DatabaseIndukHandler.loadDatabase(this);
     }
 
 
@@ -25,7 +27,7 @@ public class MainIndukActivity extends AppCompatActivity {
         String tag = view.getTag().toString().toLowerCase();
         switch (tag) {
             case "viewbutton": {
-                Intent intent = new Intent(MainIndukActivity.this, ViewPejantanActivity.class);
+                Intent intent = new Intent(MainIndukActivity.this, ViewIndukActivity.class);
                 startActivity(intent);
                 break;
             }
