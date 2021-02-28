@@ -1,40 +1,46 @@
-package com.jogjaide.ternakapp;
+package com.jogjaide.ternakapp.induk;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.jogjaide.ternakapp.induk.MainIndukActivity;
+import com.jogjaide.ternakapp.AddPejantanActivity;
+import com.jogjaide.ternakapp.DeletePejantanActivity;
+import com.jogjaide.ternakapp.MainActivity;
+import com.jogjaide.ternakapp.R;
+import com.jogjaide.ternakapp.UpdatePejantanActivity;
+import com.jogjaide.ternakapp.ViewPejantanActivity;
 
-public class Home extends AppCompatActivity {
+public class MainIndukActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_main_induk);
     }
+
 
     public void buttonPressed(View view) {
         String tag = view.getTag().toString().toLowerCase();
         switch (tag) {
             case "viewbutton": {
-                Intent intent = new Intent(Home.this, MainActivity.class);
+                Intent intent = new Intent(MainIndukActivity.this, ViewPejantanActivity.class);
                 startActivity(intent);
                 break;
             }
             case "addbutton": {
-                Intent intent = new Intent(Home.this, MainIndukActivity.class);
+                Intent intent = new Intent(MainIndukActivity.this, AddPejantanActivity.class);
                 startActivity(intent);
                 break;
             }
             case "deletebutton": {
-                Intent intent = new Intent(Home.this, DeletePejantanActivity.class);
+                Intent intent = new Intent(MainIndukActivity.this, DeletePejantanActivity.class);
                 startActivity(intent);
                 break;
             }
             case "updatebutton": {
-                Intent intent = new Intent(Home.this, UpdatePejantanActivity.class);
+                Intent intent = new Intent(MainIndukActivity.this, UpdatePejantanActivity.class);
                 startActivity(intent);
                 break;
             }

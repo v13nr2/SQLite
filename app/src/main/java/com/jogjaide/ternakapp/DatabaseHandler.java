@@ -27,7 +27,7 @@ public class DatabaseHandler {
             }
         }
 
-        count = (int) DatabaseUtils.queryNumEntries(db, "students");
+        count = (int) DatabaseUtils.queryNumEntries(db, "ternak_pejantan");
     }
 
     //read everything there is in the database
