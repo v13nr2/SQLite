@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".induk.catatanKelahiran.KelahiranActivity"></activity>
+        <activity android:name=".anak.AddAnakActivity"></activity>
+        <activity android:name=".induk.AddIndukActivity" />
+        <activity android:name=".induk.catatanKelahiran.KelahiranActivity" />
         <activity android:name=".anak.riwayatAnak.RiwayatActivity" />
         <activity android:name=".anak.kesehatan.MainActivityKesehatanAnak" />
         <activity android:name=".induk.kesehatan.MainActivityKesehatanInduk" />
