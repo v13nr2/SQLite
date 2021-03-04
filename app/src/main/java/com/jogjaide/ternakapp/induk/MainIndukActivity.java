@@ -29,7 +29,7 @@ public class MainIndukActivity extends AppCompatActivity {
                 break;
             }
             case "addbutton": {
-                Intent intent = new Intent(MainIndukActivity.this, AddPejantanActivity.class);
+                Intent intent = new Intent(MainIndukActivity.this, AddIndukActivity.class);
                 startActivity(intent);
                 break;
             }
