@@ -9,15 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".anak.ViewAnakActivity"></activity>
+        <activity android:name=".induk.catatanKelahiran.KelahiranActivity"></activity>
+        <activity android:name=".anak.riwayatAnak.RiwayatActivity" />
+        <activity android:name=".anak.kesehatan.MainActivityKesehatanAnak" />
+        <activity android:name=".induk.kesehatan.MainActivityKesehatanInduk" />
+        <activity android:name=".pejantan.kesehatan.MainActivityKesehatanPJT" />
+        <activity android:name=".anak.ViewAnakActivity" />
         <activity android:name=".anak.MainAnakActivity" />
         <activity android:name=".induk.ViewIndukActivity" />
         <activity android:name=".induk.MainIndukActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".UpdatePejantanActivity" />
-        <activity android:name=".DeletePejantanActivity" />
-        <activity android:name=".AddPejantanActivity" />
-        <activity android:name=".ViewPejantanActivity" />
+        <activity android:name=".pejantan.MainActivity" />
+        <activity android:name=".pejantan.UpdatePejantanActivity" />
+        <activity android:name=".pejantan.DeletePejantanActivity" />
+        <activity android:name=".pejantan.AddPejantanActivity" />
+        <activity android:name=".pejantan.ViewPejantanActivity" />
         <activity android:name=".Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

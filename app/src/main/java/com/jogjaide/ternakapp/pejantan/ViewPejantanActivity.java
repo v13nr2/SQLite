@@ -1,4 +1,4 @@
-package com.jogjaide.ternakapp;
+package com.jogjaide.ternakapp.pejantan;
 
 import android.database.Cursor;
 import android.graphics.Color;
@@ -11,6 +11,8 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.jogjaide.ternakapp.R;
 
 public class ViewPejantanActivity extends AppCompatActivity {
     private Cursor cr;

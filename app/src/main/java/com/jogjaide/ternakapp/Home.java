@@ -7,6 +7,8 @@ import android.view.View;
 
 import com.jogjaide.ternakapp.anak.MainAnakActivity;
 import com.jogjaide.ternakapp.induk.MainIndukActivity;
+import com.jogjaide.ternakapp.pejantan.MainActivity;
+import com.jogjaide.ternakapp.pejantan.UpdatePejantanActivity;
 
 public class Home extends AppCompatActivity {
 

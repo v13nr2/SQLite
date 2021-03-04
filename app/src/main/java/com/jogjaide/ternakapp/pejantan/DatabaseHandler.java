@@ -1,9 +1,11 @@
-package com.jogjaide.ternakapp;
+package com.jogjaide.ternakapp.pejantan;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.jogjaide.ternakapp.R;
 
 import java.util.Scanner;
 

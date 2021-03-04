@@ -5,13 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.jogjaide.ternakapp.AddPejantanActivity;
-import com.jogjaide.ternakapp.DeletePejantanActivity;
+import com.jogjaide.ternakapp.pejantan.AddPejantanActivity;
+import com.jogjaide.ternakapp.pejantan.DeletePejantanActivity;
 import com.jogjaide.ternakapp.R;
-import com.jogjaide.ternakapp.UpdatePejantanActivity;
-import com.jogjaide.ternakapp.induk.DatabaseIndukHandler;
-import com.jogjaide.ternakapp.induk.MainIndukActivity;
-import com.jogjaide.ternakapp.induk.ViewIndukActivity;
+import com.jogjaide.ternakapp.pejantan.UpdatePejantanActivity;
 
 public class MainAnakActivity extends AppCompatActivity {
 

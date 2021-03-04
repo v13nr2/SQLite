@@ -1,10 +1,12 @@
-package com.jogjaide.ternakapp;
+package com.jogjaide.ternakapp.pejantan;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import com.jogjaide.ternakapp.R;
 
 public class MainActivity extends AppCompatActivity {
     private SQLiteDatabase db;
