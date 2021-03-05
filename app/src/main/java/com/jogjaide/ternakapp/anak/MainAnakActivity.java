@@ -30,7 +30,7 @@ public class MainAnakActivity extends AppCompatActivity {
                 break;
             }
             case "addbutton": {
-                Intent intent = new Intent(MainAnakActivity.this, AddPejantanActivity.class);
+                Intent intent = new Intent(MainAnakActivity.this, AddAnakActivity.class);
                 startActivity(intent);
                 break;
             }
