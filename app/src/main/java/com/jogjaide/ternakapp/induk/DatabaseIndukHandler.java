@@ -42,7 +42,7 @@ public class DatabaseIndukHandler {
     // add a new student's record to the database
     public static void addToDatabase(String name, String mobile) {
         countinduk++;
-        String sql = "INSERT INTO ternak_pejantan(id, nomor_ternak, nama_ternak) VALUES (" + countinduk + ",'" + name + "','" + mobile + "');";
+        String sql = "INSERT INTO ternak_induk(id, nomor_ternak, asal) VALUES (" + countinduk + ",'" + name + "','" + mobile + "');";
         dbinduk.execSQL(sql);
     }
 

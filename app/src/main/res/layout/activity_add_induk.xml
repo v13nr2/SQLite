@@ -43,7 +43,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama Ternak: "
+            android:text="Asal: "
             android:textColor="#000000"
             android:textStyle="bold" />
 
