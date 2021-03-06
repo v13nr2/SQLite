@@ -28,6 +28,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="buttonPressed"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
         android:tag="viewButton"
         android:text="View all Pejantan" />
 
@@ -35,6 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="buttonPressed"
+        android:background="@color/colorPrimary"
         android:tag="addButton"
         android:text="Tambah Pejantan" />
 
@@ -42,7 +46,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="buttonPressed"
+        android:background="@color/colorPrimary"
         android:tag="updateButton"
+        android:textColor="#FFFFFF"
         android:text="Update Pejantan" />
 
     <Button
@@ -50,5 +56,17 @@
         android:layout_height="wrap_content"
         android:onClick="buttonPressed"
         android:tag="deleteButton"
+        android:background="@color/colorPrimary"
         android:text="Delete Pejantan" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="buttonPressed"
+        android:shadowColor="@color/colorAccent"
+        android:background="@color/colorAccent"
+        android:tag="kesPJT"
+        android:text="Kesehatan Pejantan" />
 </android.widget.LinearLayout>

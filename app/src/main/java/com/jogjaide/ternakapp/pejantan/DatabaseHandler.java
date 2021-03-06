@@ -18,7 +18,7 @@ public class DatabaseHandler {
 
     //Read database schema from raw resources and create the database
     public static void loadDatabase(Context context) {
-        db = context.openOrCreateDatabase("data.sqlite", MODE_PRIVATE, null);
+        db = context.openOrCreateDatabase("database.sqlite", MODE_PRIVATE, null);
         Scanner scan = new Scanner(context.getResources().openRawResource(R.raw.database));
         String query = "";
         while (scan.hasNextLine()) {

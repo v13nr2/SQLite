@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.jogjaide.ternakapp.R;
+import com.jogjaide.ternakapp.pejantan.kesehatan.MainActivityKesehatanPJT;
 
 public class MainActivity extends AppCompatActivity {
     private SQLiteDatabase db;
@@ -38,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
             }
             case "updatebutton": {
                 Intent intent = new Intent(MainActivity.this, UpdatePejantanActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case "kesPJT": {
+                Intent intent = new Intent(MainActivity.this, MainActivityKesehatanPJT.class);
                 startActivity(intent);
                 break;
             }
