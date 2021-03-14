@@ -1,4 +1,4 @@
-package com.jogjaide.ternakapp.pejantan;
+package com.jogjaide.ternakapp.pejantan.kesehatan;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -7,32 +7,14 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.jogjaide.ternakapp.R;
 
-import java.io.File;
 import java.util.Scanner;
 
 import static android.content.Context.MODE_PRIVATE;
 
-public class DatabaseHandler {
+public class DatabaseHandlerKesPjt {
     private static SQLiteDatabase db;
     private static Cursor cr,crinduk;
     private static int count = 0; //primary key of database
-
-    private static String DB_PATH = "/data/data/com.jogjaide.ternakapp/databases/";
-
-
-    private boolean checkDatabase(){
-        File dbFile = new File(DB_PATH + "database.sqlite");
-        if(dbFile.exists()){
-            return true;
-        }
-        else{
-            //This'll create the directories you wanna write to, so you
-            //can put the DB in the right spot.
-            dbFile.getParentFile().mkdirs();
-            return false;
-        }
-    }
-
 
     //Read database schema from raw resources and create the database
     public static void loadDatabase(Context context) {
