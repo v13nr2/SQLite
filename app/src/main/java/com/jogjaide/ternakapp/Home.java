@@ -7,8 +7,10 @@ import android.view.View;
 
 import com.jogjaide.ternakapp.anak.MainAnakActivity;
 import com.jogjaide.ternakapp.induk.MainIndukActivity;
+import com.jogjaide.ternakapp.pejantan.DatabaseHandler;
 import com.jogjaide.ternakapp.pejantan.MainActivity;
 import com.jogjaide.ternakapp.pejantan.UpdatePejantanActivity;
+import com.jogjaide.ternakapp.pejantan.DatabaseHandler;
 
 public class Home extends AppCompatActivity {
 
@@ -16,6 +18,9 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        //DatabaseHandler.checkDatabase();
+        DatabaseHandler.loadDatabase(this);
     }
 
     public void buttonPressed(View view) {

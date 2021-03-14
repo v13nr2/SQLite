@@ -19,6 +19,21 @@ public class DatabaseHandler {
 
     private static String DB_PATH = "/data/data/com.jogjaide.ternakapp/databases/";
 
+    public static final String KEY_STUID = "id";
+    public static final String KEY_SUB1 = "nomor_ternak";
+    public static final String KEY_SUB2 = "nama_ternak";
+    public static final String KEY_SUB3= "asal";
+    public static final String KEY_SUB4= "foto";
+    public static final String KEY_SUB5 = "silsilah_pejantan";
+    public static final String KEY_SUB6 = "silsilah_induk";
+    public static final String KEY_SUB7 = "hari_dikawinkan";
+    public static final String KEY_SUB8 = "tanggal_dikawinkan";
+    public static final String KEY_SUB9 = "catatan";
+
+    private static final String DATABASE_NAME = "database.sqlite";
+    private static final String DATABASE_MARKSTABLE = "ternak_pejantan";
+    private static final int DATABASE_VERSION = 1;
+
 
     private boolean checkDatabase(){
         File dbFile = new File(DB_PATH + "database.sqlite");
@@ -47,7 +62,39 @@ public class DatabaseHandler {
             }
         }
 
+        db.execSQL(" CREATE TABLE  IF NOT EXISTS " + DATABASE_MARKSTABLE + " (" +
+                KEY_STUID + " TEXT PRIMARY KEY, " +
+                KEY_SUB1 + " TEXT NOT NULL, " +
+                KEY_SUB2 + " TEXT NOT NULL, " +
+                KEY_SUB3 + " TEXT NOT NULL, " +
+                KEY_SUB4 + " TEXT NOT NULL, " +
+                KEY_SUB5 + " TEXT NOT NULL, " +
+                KEY_SUB6 + " TEXT NOT NULL, " +
+                KEY_SUB7 + " TEXT NOT NULL, " +
+                KEY_SUB8 + " TEXT NOT NULL, " +
+                KEY_SUB9 + " TEXT NOT NULL " +
+                ");"
+        );
+
         count = (int) DatabaseUtils.queryNumEntries(db, "ternak_pejantan");
+    }
+
+
+    public void onCreate(SQLiteDatabase db) {
+        // TODO Auto-generated method stub
+        db.execSQL(" CREATE TABLE  IF NOT EXISTS " + DATABASE_MARKSTABLE + " (" +
+                KEY_STUID + " TEXT PRIMARY KEY, " +
+                KEY_SUB1 + " TEXT NOT NULL, " +
+                KEY_SUB2 + " TEXT NOT NULL, " +
+                KEY_SUB3 + " TEXT NOT NULL, " +
+                KEY_SUB4 + " TEXT NOT NULL, " +
+                KEY_SUB5 + " TEXT NOT NULL, " +
+                KEY_SUB6 + " TEXT NOT NULL, " +
+                KEY_SUB7 + " TEXT NOT NULL, " +
+                KEY_SUB8 + " TEXT NOT NULL, " +
+                KEY_SUB9 + " TEXT NOT NULL " +
+              ");"
+        );
     }
 
     //read everything there is in the database
